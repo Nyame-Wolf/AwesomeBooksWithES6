@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Books Collection</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Awesome Books</h1>
+        <ul class="flex_row">
+          <li><a class="list-link" href="#list">List</a></li>
+          <li><a class="form-link" href="#form">Add New</a></li>
+          <li><a class="contact-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="date"></div>
+    </header>
+
+    <div id="list">
+      <h2>All Awesome books</h2>
+      <div class="book-container"></div>
+    </div>
+
+    <div id="form" class="no-display">
+      <h3>Add A New Book</h3>
+      <form class="book-form">
+        <input
+          id="title"
+          type="text"
+          placeholder="Title"
+          name="title"
+          required
+        />
+        <input
+          id="author"
+          type="text"
+          placeholder="Author"
+          name="author"
+          required
+        />
+        <button class="add-btn" type="submit">Add</button>
+      </form>
+    </div>
+
+    <div id="contact" class="no-display">
+      <h2>Contact Information</h2>
+      <div>
+        <p>Do have any queries or you just want to say "Hello"?</p>
+        <p>You can reach out to us!</p>
+      </div>
+
+      <ul>
+        <li>Our e-mail: katanamumenya@mail.com</li>
+        <li>Our phone number: +2547782383843</li>
+        <li>Our adress: Harambee Avenue Nairobi Kenya</li>
+      </ul>
+    </div>
+    <footer>
+      <div class="copyright">Copyright</div>
+    </footer>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
