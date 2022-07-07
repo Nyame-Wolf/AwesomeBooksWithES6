@@ -8,6 +8,8 @@ bkClass.bookForm.onsubmit = (e) => {
   // eslint-disable-next-line max-len
   const newBook = bkClass.Book.addBook(new bkClass.Book(bkClass.bookForm.title.value, bkClass.bookForm.author.value));
   bkClass.Book.createBook(newBook);
+  bkClass.bookForm.title.value = '';
+  bkClass.bookForm.author.value = '';
 };
 
 variables.listLink.addEventListener('click', () => {
